@@ -1,30 +1,47 @@
 {
-    "version": "1.0.0",
-    "updated_at": "2026-04-03T00:08:00Z",
+    "version": "1.2.1",
+    "updated_at": "2026-04-03T21:15:00Z",
+    "update_notice": "Sideload Expansion Release: Added optional external mods (TST and ScienceNotLeisure) for experiment-driven deployments.",
     "mods": [
         {
             "name": "ArcardaCore",
-            "filename": "ArcardaCore-1.0.0.jar",
+            "filename": "libs/ArcardaCore-1.0.0.jar",
             "author": "Arcarda",
             "description": "Core library for the Arcarda mod suite."
         },
         {
             "name": "ArcRifts",
-            "filename": "ArcRifts-GTNH-1.0.0.jar",
+            "filename": "libs/ArcRifts-GTNH-1.0.0.jar",
             "author": "Arcarda",
             "description": "REVITALIZED Dimensional Doors overhaul for GTNH 1.7.10."
         },
         {
             "name": "GTNH-RoR",
-            "filename": "GTNH-RoR-1.0.jar",
+            "filename": "libs/GTNH-RoR-1.0.jar",
             "author": "Arcarda",
             "description": "Risk of Rain mechanics integrated into GTNH."
         },
         {
             "name": "PollutionMutation",
-            "filename": "PollutionMutation-Server-0.7.jar",
+            "filename": "libs/PollutionMutation-Server-0.7.jar",
             "author": "Arcarda",
             "description": "Pollution-based mutation mechanics for enhanced survival."
+        }
+    ],
+    "sideloads": [
+        {
+            "id": "twist-space-technology",
+            "version": "0.7.15",
+            "filename": "libs/TwistSpaceTechnology-0.7.15.jar",
+            "author": "External (TST)",
+            "description": "Experimental spatial mechanics integration."
+        },
+        {
+            "id": "science-not-leisure",
+            "version": "0.2.3",
+            "filename": "libs/sciencenotleisure-v0.2.3.jar",
+            "author": "External (SNB)",
+            "description": "Specialized technical progression enhancements."
         }
     ]
 }

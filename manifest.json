@@ -1,0 +1,30 @@
+{
+    "version": "1.0.0",
+    "updated_at": "2026-04-03T00:08:00Z",
+    "mods": [
+        {
+            "name": "ArcardaCore",
+            "filename": "ArcardaCore-1.0.0.jar",
+            "author": "Arcarda",
+            "description": "Core library for the Arcarda mod suite."
+        },
+        {
+            "name": "ArcRifts",
+            "filename": "ArcRifts-GTNH-1.0.0.jar",
+            "author": "Arcarda",
+            "description": "REVITALIZED Dimensional Doors overhaul for GTNH 1.7.10."
+        },
+        {
+            "name": "GTNH-RoR",
+            "filename": "GTNH-RoR-1.0.jar",
+            "author": "Arcarda",
+            "description": "Risk of Rain mechanics integrated into GTNH."
+        },
+        {
+            "name": "PollutionMutation",
+            "filename": "PollutionMutation-Server-0.7.jar",
+            "author": "Arcarda",
+            "description": "Pollution-based mutation mechanics for enhanced survival."
+        }
+    ]
+}

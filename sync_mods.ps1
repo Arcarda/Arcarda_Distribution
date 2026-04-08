@@ -55,11 +55,18 @@ function Purge-ConflictingMods {
 function Sync-File {
     param($JarName, $Target)
     if ($Target -and (Test-Path $Target)) {
+        $localPath = ""
         if (Test-Path "$LOCAL_LIBS\$JarName") {
+            $localPath = "$LOCAL_LIBS\$JarName"
+        } elseif (Test-Path "NotMine\$JarName") {
+            $localPath = "NotMine\$JarName"
+        }
+
+        if ($localPath) {
             Write-Host "[DEPLOY] Copying $JarName..." -ForegroundColor Green
-            Copy-Item "$LOCAL_LIBS\$JarName" -Destination "$Target"
+            Copy-Item "$localPath" -Destination "$Target"
         } else {
-            Write-Host "[WARN] $JarName not found in local libs. Skipping." -ForegroundColor Red
+            Write-Host "[WARN] $JarName not found in local sources (libs/NotMine). Skipping." -ForegroundColor Red
         }
     } else {
         Write-Host "[STAGING] $JarName is ready." -ForegroundColor Gray

@@ -40,6 +40,12 @@
       "version": "1.2.1",
       "jar": "JournalsOfArcarda-1.2.1.jar",
       "side": "both"
+    },
+    {
+      "id": "gtnh-tc-wands",
+      "version": "1.4.6",
+      "jar": "GTNH-TC-Wands-1.4.6.jar",
+      "side": "both"
     }
   ],
   "sideloads": [

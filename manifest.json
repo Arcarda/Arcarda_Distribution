@@ -2,7 +2,7 @@
   "version": "1.3.0",
   "name": "Arcarda Mod Suite",
   "release_date": "2026-04-08",
-  "update_notice": "High-Fidelity Asset Refresh: Integrated new obsidian/gold textures for ArcRifts, standardized archives naming conventions, and finalized GTNH-RoR compilation fixes.",
+  "update_notice": "High-Fidelity Asset Refresh: Integrated new obsidian/gold textures for ArcRifts, standardized archives naming conventions, and finalized GTNH-RoR compilation fixes. (Stabilization Audit: Removed experimental NeuralBridge.)",
   "mods": [
     {
       "id": "arcardacore",
@@ -28,12 +28,6 @@
       "jar": "GTNH-RoR-1.0.0.jar",
       "side": "both",
       "default_enabled": false
-    },
-    {
-      "id": "mekkina-neural-avatar",
-      "version": "1.0.0",
-      "jar": "mekkina-neural-avatar-1.0.0.jar",
-      "side": "both"
     },
     {
       "id": "gtnh-recipe-explorer",

@@ -1,47 +1,67 @@
 {
-    "version": "1.2.1",
-    "updated_at": "2026-04-03T21:15:00Z",
-    "update_notice": "Sideload Expansion Release: Added optional external mods (TST and ScienceNotLeisure) for experiment-driven deployments.",
-    "mods": [
-        {
-            "name": "ArcardaCore",
-            "filename": "libs/ArcardaCore-1.0.0.jar",
-            "author": "Arcarda",
-            "description": "Core library for the Arcarda mod suite."
-        },
-        {
-            "name": "ArcRifts",
-            "filename": "libs/ArcRifts-GTNH-1.0.0.jar",
-            "author": "Arcarda",
-            "description": "REVITALIZED Dimensional Doors overhaul for GTNH 1.7.10."
-        },
-        {
-            "name": "GTNH-RoR",
-            "filename": "libs/GTNH-RoR-1.0.jar",
-            "author": "Arcarda",
-            "description": "Risk of Rain mechanics integrated into GTNH."
-        },
-        {
-            "name": "PollutionMutation",
-            "filename": "libs/PollutionMutation-Server-0.7.jar",
-            "author": "Arcarda",
-            "description": "Pollution-based mutation mechanics for enhanced survival."
-        }
-    ],
-    "sideloads": [
-        {
-            "id": "twist-space-technology",
-            "version": "0.7.15",
-            "filename": "libs/TwistSpaceTechnology-0.7.15.jar",
-            "author": "External (TST)",
-            "description": "Experimental spatial mechanics integration."
-        },
-        {
-            "id": "science-not-leisure",
-            "version": "0.2.3",
-            "filename": "libs/sciencenotleisure-v0.2.3.jar",
-            "author": "External (SNB)",
-            "description": "Specialized technical progression enhancements."
-        }
-    ]
+  "version": "1.3.0",
+  "name": "Arcarda Mod Suite",
+  "release_date": "2026-04-08",
+  "update_notice": "High-Fidelity Asset Refresh: Integrated new obsidian/gold textures for ArcRifts, standardized archives naming conventions, and finalized GTNH-RoR compilation fixes.",
+  "mods": [
+    {
+      "id": "arcardacore",
+      "version": "1.0.0",
+      "jar": "ArcardaCore-1.0.0.jar",
+      "side": "both"
+    },
+    {
+      "id": "arcrifts",
+      "version": "1.0.0",
+      "jar": "ArcRifts-1.0.0.jar",
+      "side": "both"
+    },
+    {
+      "id": "pollutionmod",
+      "version": "1.0.0",
+      "jar": "PollutionMod-1.0.0.jar",
+      "side": "both"
+    },
+    {
+      "id": "gtnhror",
+      "version": "1.0.0",
+      "jar": "GTNH-RoR-1.0.0.jar",
+      "side": "both",
+      "default_enabled": false
+    },
+    {
+      "id": "mekkina-neural-avatar",
+      "version": "1.0.0",
+      "jar": "mekkina-neural-avatar-1.0.0.jar",
+      "side": "both"
+    },
+    {
+      "id": "gtnh-recipe-explorer",
+      "version": "1.0.0",
+      "jar": "gtnh-recipe-explorer-1.0.0.jar",
+      "side": "client"
+    },
+    {
+      "id": "journalsofarcarda",
+      "version": "1.2.1",
+      "jar": "JournalsOfArcarda-1.2.1.jar",
+      "side": "both"
+    }
+  ],
+  "sideloads": [
+    {
+      "id": "twist-space-technology",
+      "version": "0.7.15",
+      "jar": "TwistSpaceTechnology-0.7.15.jar",
+      "side": "both",
+      "reason": "Experimental spatial mechanics integration."
+    },
+    {
+      "id": "science-not-leisure",
+      "version": "0.2.3",
+      "jar": "sciencenotleisure-v0.2.3.jar",
+      "side": "both",
+      "reason": "Specialized technical progression enhancements."
+    }
+  ]
 }

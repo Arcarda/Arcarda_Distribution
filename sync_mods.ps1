@@ -107,6 +107,14 @@ try {
         
         Set-Content -Path $LOCAL_VERSION_FILE -Value $remoteVersion
         Write-Host "[SYNC] Synchronization complete." -ForegroundColor Green
+        
+        $RP_SOURCE = "$DistRepo\..\Arcarda_Resources.zip"
+        if(Test-Path "Arcarda_Resources.zip") {
+            $rpTarget = "$TargetDir\..\resourcepacks"
+            if(!(Test-Path $rpTarget)) { New-Item -ItemType Directory -Path $rpTarget | Out-Null }
+            Copy-Item "Arcarda_Resources.zip" "$rpTarget\Arcarda_Resources.zip" -Force
+            Write-Host "[DEPLOY] Pushed Arcarda_Resources.zip clientside." -ForegroundColor Green
+        }
     } else {
         Write-Host "[SYNC] Local suite is up to date (v$localVersion)." -ForegroundColor Green
     }
